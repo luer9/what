@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img  src="../assets/img/logo.png" id="logo">
     <p>{{ str2 }} </p>
     <search  @searchOk="searchOk" />
     <transition name="el-fade-in">
@@ -14,7 +15,7 @@
 import search  from "./search";
 import axios from "../assets/js/axios";
 export default {
-  name: 'HelloMusic',
+  name: 'musicQA',
   components: {search},
   data () {
     return {
@@ -61,10 +62,10 @@ export default {
        }
      })
      this.show = true;
-    },
-    mounted() {
-      this.typing();
     }
+  },
+  mounted() {
+    this.typing();
   }
 }
 </script>
@@ -94,5 +95,9 @@ export default {
     letter-spacing: 1px;
     line-height: 22px;
     overflow:hidden;
+  }
+  #logo{
+    margin-bottom: 10px;
+    transform: scale(0.3);
   }
 </style>

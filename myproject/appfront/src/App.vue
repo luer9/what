@@ -1,14 +1,23 @@
 <template>
 
   <div id="app">
-    <img src="./assets/img/logo.png" id="logo">
 
-    <router-view/>
+      <!--导航区域-->
+        <v-nav></v-nav>
+    <router-view></router-view>
+<!--
+
+-->
+
+
+
   </div>
 </template>
 
 <script>
+import nav from './components/nav'
 export default {
+  components: { 'v-nav': nav },
   name: 'App'
 }
 </script>
@@ -29,10 +38,7 @@ export default {
   position:fixed;
   background-size:100% 100%;
 }
-  #logo{
-    margin-bottom: 10px;
-    transform: scale(0.3);
-  }
+
 </style>
 
 

@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('musicQA/', views.musicQA)
+    path('musicQA/', views.musicQA),
+    path('getrels/', views.getrels),
+    path('getnodes/', views.getnodes)
 ]
