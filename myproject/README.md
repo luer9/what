@@ -4,6 +4,9 @@
 * vue/cli 4.5.8
 * Django 2.2.16
 * neo4j 4.2.2
+* d3 3.5.17
+    * 查询版本: npm ls xxx -g
+    * pip已经安装过的包 pip list
 # 开发工具
 * vscode (主要)
 * pycharm 2020.1.3 测试用
@@ -74,7 +77,7 @@
 
 * 2021-02-20 
     * 计划建立关系，不难，然后看知识表示学习。。。。
-    * 成功
+    * 关系建立成功，neo4j数据建立成功
 
 ## 2021-02-22
 * 前端升级
@@ -89,3 +92,4 @@
         * http://www.molapages.xyz/molablog/page/72
         * https://github.com/molamolaxxx/KGView
         * http://www.molapages.xyz/KGView/
+    * 遇到的问题：因为数据太多，页面卡顿，暂时不知道怎么解决
