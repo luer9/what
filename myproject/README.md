@@ -32,10 +32,10 @@
     * localhost 和 127.0.0.1 的问题！！！（主要是这个问题！！！）
     * 以及采用django-cors....一个插件来解决跨域问题（这个比较好配置）
 * 实现了前后端交互
-
-## 测试连接数据库
+## 2021-02-15
+### 测试连接数据库
 * testConnect.py 连接neo4j数据库、测试节点、测试关系 ✔
-## 建立知识图谱
+### 建立知识图谱
 * 根据清洗过的数据，依照QASystem项目中build_medicalgraph.py建立知识图谱
 * 缕清musicKG中的节点和关系
     * 节点
@@ -93,3 +93,8 @@
         * https://github.com/molamolaxxx/KGView
         * http://www.molapages.xyz/KGView/
     * 遇到的问题：因为数据太多，页面卡顿，暂时不知道怎么解决
+
+## 2021-3-10
+    * 问答系统
+        * 调用接口
+        * url = 'https://api.ownthink.com/bot?appid=xiaosi&spoken='+issue;

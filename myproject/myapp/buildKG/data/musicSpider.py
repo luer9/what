@@ -45,14 +45,10 @@ def filter(text):
 
 
 if __name__ == '__main__':
-
    musicItems = musicList('music.txt')
-   # print(musicItems)
    musicItems = list(set(musicItems))   # 去重
    result_data = []
    for item in musicItems:
-       print(item)
-
        url = "https://baike.baidu.com/item/"
        url = url + item
        bs = BeautifulSoup(url_open(url), features="html.parser")
@@ -72,13 +68,9 @@ if __name__ == '__main__':
            text = text.strip()
            value_data.append(text)
 
-       # print(name_data)
-       # print(value_data)
-
        infor = dict(zip(name_data, value_data))   # 两个列表结合成字典形式
 
        # infor = json.dumps(infor, ensure_ascii=False)    # 字典转json 没必要
-
        if str(infor) != '{}':
            result_data.append(infor)
 

@@ -597,8 +597,8 @@ if __name__ == '__main__':
     headler.___init___()
     headler.test()
     # headler.read_nodes(data_path)
-   # headler.export_data()
+    headler.export_data()
     # headler.get_infor(data_path)
-   # headler.create_graphnodes()
+    #headler.create_graphnodes()
     
-   # headler.create_graphrels()
+    #headler.create_graphrels()
